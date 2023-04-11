@@ -1,0 +1,141 @@
+*{margin: 0;
+padding: 0;}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap');
+
+:root{ 
+    --cor-primaria: #000000;
+    --cor-secundaria: #F1FAEE;
+    --cor-terciaria: #22d4fd;
+
+    --fonte: 'Poppins', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+
+}
+
+body {background-color: var(--cor-primaria);
+    color: var(--cor-secundaria)
+}
+
+.cabeçalho {display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding: 1rem;}
+    
+#logo img {
+    width: 4rem;
+}
+
+.cabeçalho_menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.cabeçalho_menu a {
+    color: var(--cor-terciaria);
+    justify-content: space-between;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    
+   
+}
+.cabeçalho_menu a:hover{color: var(--cor-secundaria);
+}
+
+.cabeçalho_menu li {
+    margin: 0 1rem
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 5% 15%;
+}
+.apresentacao_conteudo {
+    display: flex;
+    width: 50%;
+    flex-direction:column;
+    gap: 2.5rem;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 3rem;
+    font-family: var(--fonte);
+
+}
+.destaque {
+    color: var(--cor-terciaria)
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao_links {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.apresentacao_links_titulo {
+    font-family: var(--fonte);
+    font-size: 1.2rem;
+}
+
+.apresentacao_links_link {
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 10px 20px;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 10px;
+    width: 50%;
+    text-decoration:none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.apresentacao.imagem {
+    width: 50%;
+}
+.apresentacao_imagem img {
+    width: 70%;
+}
+
+.fa-brands {
+    color: var(--cor-terciaria);
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+@media (max-width: 768px){
+
+    .apresentacao { flex-direction: column-reverse;
+    
+}
+.apresentacao_conteudo {
+    width: auto;
+}
+
+}
